@@ -28,7 +28,12 @@ def test_remove_passenger()
   assert_equal(1, @bus.passenger_count())
 end
 
-
+def test_remove_all_passengers()
+  @bus.add_passenger(@person1)
+  @bus.add_passenger(@person2)
+  @bus.remove_all_passengers()
+  assert_equal(0, @bus.passenger_count())
+end
 
 
 end

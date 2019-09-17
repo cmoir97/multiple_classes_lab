@@ -19,5 +19,10 @@ def remove_passenger(passenger_to_remove)
   @passengers.delete(passenger_to_remove)
 end
 
+def remove_all_passengers()
+  @passengers.clear()
+end
+
+
 
 end
