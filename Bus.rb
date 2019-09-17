@@ -15,5 +15,9 @@ def add_passenger(new_passenger)
   @passengers.push(new_passenger)
 end
 
+def remove_passenger(passenger_to_remove)
+  @passengers.delete(passenger_to_remove)
+end
+
 
 end
