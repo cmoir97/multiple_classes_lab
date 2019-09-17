@@ -23,6 +23,8 @@ def remove_all_passengers()
   @passengers.clear()
 end
 
-
+def pick_up(stop)
+  @passengers += stop.queue()
+end
 
 end
